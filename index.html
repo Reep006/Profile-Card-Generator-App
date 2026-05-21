@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>Create Your Profile</h1>
+      <form id="profileForm" autocomplete="off">
+        <input 
+           type="text" 
+           id="name" 
+           placeholder="Enter your name"
+           autocomplete="off"
+           required
+           >
+       <textarea 
+           id="bio" 
+           placeholder="Write something about yourself..."
+           autocomplete="off"
+           required
+       ></textarea>
+        <input 
+           type="url" 
+           id="image" 
+           placeholder="Paste image URL"
+           autocomplete="off"
+           required
+       >
+        <button type="submit">
+          Generate Profile
+        </button>
+      </form>
+    </div>
+    <div class="card-section">
+      <div class="profile-card" id="profileCard">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="profile"
+          id="cardImage"
+        />
+        <h2 id="cardName">Your Name</h2>
+        <p id="cardBio">
+          Your bio will appear here...
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
