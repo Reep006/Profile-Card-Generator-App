@@ -20,7 +20,7 @@ form.addEventListener("submit", async (e) => {
   try {
     // Send Data To Backend
     const response = await fetch(
-      "https://profile-card-app-mkbu.onrender.com/create-profile",
+      "https://profile-card-generator-app.onrender.com/create-profile",
       {
         method: "POST",
         headers: {
